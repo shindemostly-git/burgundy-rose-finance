@@ -28,6 +28,19 @@ export function FinalCta() {
                 Call 7350767410
               </a>
             </div>
+
+            <div className="mt-14 grid gap-px overflow-hidden rounded-[18px] border border-border bg-border text-left sm:grid-cols-3">
+              {[
+                ["Requirement Range", "₹50 Lakhs to ₹10 Crore"],
+                ["Advisory Scope", "Business & personal financing"],
+                ["Direct Line", "7350767410"],
+              ].map(([t, d]) => (
+                <div key={t} className="bg-ivory px-7 py-6">
+                  <p className="text-[0.68rem] tracking-[0.24em] text-primary uppercase">{t}</p>
+                  <p className="mt-3 text-[0.95rem] font-medium text-foreground">{d}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </Reveal>
       </div>
