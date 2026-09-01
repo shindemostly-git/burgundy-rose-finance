@@ -51,23 +51,77 @@ export function FinalCta() {
 export function SiteFooter() {
   return (
     <footer className="bg-ivory">
-      <div className="mx-auto flex max-w-[1240px] flex-col gap-6 border-t border-border px-6 py-10 sm:flex-row sm:items-center sm:justify-between lg:px-10">
-        <div className="leading-[1.2]">
-          <p className="text-[0.9rem] font-semibold tracking-[0.14em] text-foreground">
-            DAYANAND V P
-          </p>
-          <p className="text-[0.7rem] tracking-[0.28em] text-primary">&amp; ASSOCIATES</p>
+      <div className="mx-auto max-w-[1240px] border-t border-border px-6 py-12 lg:px-10">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="leading-[1.2]">
+            <p className="text-[0.9rem] font-semibold tracking-[0.14em] text-foreground">
+              DAYANAND V P
+            </p>
+            <p className="text-[0.7rem] tracking-[0.28em] text-primary">&amp; ASSOCIATES</p>
+            <p className="mt-4 max-w-xs text-xs leading-relaxed text-muted-foreground">
+              Financing guidance and advisory for businesses and individuals.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-[0.7rem] font-semibold tracking-[0.2em] text-primary uppercase">
+              Office Address
+            </p>
+            <address className="mt-4 not-italic text-[0.875rem] leading-[1.7] text-muted-foreground">
+              Sr No. 104/1, Sadanand Business Center,
+              <br />
+              9th Floor, NH 48, Pashan Hwy Side Rd,
+              <br />
+              Baner, Pune, Maharashtra 411045
+            </address>
+          </div>
+
+          <div>
+            <p className="text-[0.7rem] font-semibold tracking-[0.2em] text-primary uppercase">
+              Contact
+            </p>
+            <ul className="mt-4 space-y-2 text-[0.875rem] text-muted-foreground">
+              <li>
+                <a
+                  href="tel:7350767410"
+                  className="font-medium text-foreground transition-colors hover:text-primary-deep"
+                >
+                  7350767410
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:Plexarow@gmail.com"
+                  className="transition-colors hover:text-primary-deep"
+                >
+                  Plexarow@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-[0.7rem] font-semibold tracking-[0.2em] text-primary uppercase">
+              Disclaimer
+            </p>
+            <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
+              Loan approval, terms and interest rates are determined solely by the respective lending
+              institutions.
+            </p>
+          </div>
         </div>
-        <p className="max-w-md text-xs leading-relaxed text-muted-foreground">
-          Financing guidance and advisory. Loan approval, terms and interest rates are determined
-          solely by the respective lending institutions.
-        </p>
-        <a
-          href="tel:7350767410"
-          className="text-[0.875rem] font-medium text-primary transition-colors hover:text-primary-deep"
-        >
-          7350767410
-        </a>
+
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row">
+          <p className="text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Dayanand V P &amp; Associates. All rights reserved.
+          </p>
+          <a
+            href="tel:7350767410"
+            className="text-[0.875rem] font-medium text-primary transition-colors hover:text-primary-deep"
+          >
+            7350767410
+          </a>
+        </div>
       </div>
     </footer>
   );
