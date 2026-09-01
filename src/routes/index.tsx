@@ -39,8 +39,10 @@ function Index() {
         <Hero />
         <Stats />
         <Solutions />
+        <Process />
         <Calculator />
         <FinancingRange />
+        <Clients />
         <Network />
         <Insights />
         <Faq />
