@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 const links = [
   { label: "Home", href: "#home" },
   { label: "Solutions", href: "#solutions" },
-  { label: "Loans", href: "#calculator" },
-  { label: "Resources", href: "#insights" },
-  { label: "About", href: "#network" },
+  { label: "Approach", href: "#approach" },
+  { label: "EMI Calculator", href: "#calculator" },
+  { label: "Clients", href: "#clients" },
+  { label: "Insights", href: "#insights" },
+  { label: "Network", href: "#network" },
   { label: "Contact", href: "#contact" },
 ];
 
