@@ -57,12 +57,12 @@ export function Insights() {
                 />
               </div>
               <div className="flex flex-col justify-center p-8 lg:p-10">
-                <span className="eyebrow">{items[0].tag}</span>
+                <span className="eyebrow">{items[0]!.tag}</span>
                 <h3 className="font-display mt-4 text-[1.65rem] leading-[1.2] text-foreground">
-                  {items[0].title}
+                  {items[0]!.title}
                 </h3>
                 <p className="mt-4 text-[0.95rem] leading-[1.8] text-muted-foreground">
-                  {items[0].desc}
+                  {items[0]!.desc}
                 </p>
                 <span className="mt-7 inline-flex items-center gap-2 text-[0.8125rem] font-medium text-primary">
                   Read
